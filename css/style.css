@@ -1084,26 +1084,27 @@ svg {
 }
 
 .lifestyle__image {
+  overflow: hidden;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
 }
 
-.lifestyle__image:nth-child(1) {
+.lifestyle__image:nth-child(1) img {
   -webkit-transform: translate(-50%, 0px);
       -ms-transform: translate(-50%, 0px);
           transform: translate(-50%, 0px);
   opacity: 0;
 }
 
-.lifestyle__image:nth-child(2) {
-  -webkit-transform: translate(0px, -100%);
-      -ms-transform: translate(0px, -100%);
-          transform: translate(0px, -100%);
+.lifestyle__image:nth-child(2) img {
+  -webkit-transform: translate(0px, 10%);
+      -ms-transform: translate(0px, 10%);
+          transform: translate(0px, 10%);
   opacity: 0;
 }
 
-.lifestyle__image._watcher-view {
+.lifestyle__image._watcher-view img {
   -webkit-animation: showEl 0.5s forwards linear;
           animation: showEl 0.5s forwards linear;
 }
