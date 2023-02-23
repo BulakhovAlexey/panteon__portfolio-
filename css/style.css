@@ -835,10 +835,9 @@ html.menu-open .menu__list {
 }
 
 .no-webp .panteon{
-  background: url("../img/main-bg.jpg") no-repeat center 0; }
+  background: url("../img/main-bg.jpg") center/cover no-repeat; }
 
 .panteon {
-  background-size: cover;
   text-align: center;
   height: 100vh;
   position: relative;
@@ -1780,10 +1779,9 @@ svg {
 }
 
 .no-webp .callback{
-  background: url("../img/form-bg.jpg") no-repeat center fixed; }
+  background: url("../img/form-bg.jpg") center/cover no-repeat fixed; }
 
 .callback {
-  background-size: cover;
   position: relative;
 }
 
@@ -4394,6 +4392,6 @@ svg {
   }
 }
 
-.webp .panteon{ background: url(../img/main-bg.webp) no-repeat center 0; }
+.webp .panteon{ background: url(../img/main-bg.webp) center/cover no-repeat; }
 
-.webp .callback{ background: url(../img/form-bg.webp) no-repeat center fixed; }
+.webp .callback{ background: url(../img/form-bg.webp) center/cover no-repeat fixed; }
