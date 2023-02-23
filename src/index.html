@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/_head.htm',{ "title":"TITLE" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="page__panteon panteon">
+          <div class="panteon__container">
+            <div class="panteon__content">
+              <h1 class="panteon__main-title">Фитнес клуб Пантеон</h1>
+              <h2 class="panteon__main-subtitle">Лучше нас только боги</h2>
+              <div class="panteon__button">
+                <a href="#">Получить консультацию</a>
+              </div>
+            </div>
+            <div class="panteon__icons">
+              <a href="#" class="panteon__icon _icon-instagram"></a>
+              <a href="#" class="panteon__icon _icon-vk"></a>
+              <a
+                href="#"
+                data-goto-header
+                data-goto=".lifestyle"
+                class="panteon__arrow _icon-arrow-down"
+              ></a>
+            </div>
+          </div>
+          <div class="panteon__decor _big-black">
+            <svg>
+              <use xlink:href="@img/icons/icons.svg#black"></use>
+            </svg>
+          </div>
+          <div class="panteon__decor _big-yellow">
+            <svg>
+              <use xlink:href="@img/icons/icons.svg#yellow"></use>
+            </svg>
+          </div>
+          <div class="panteon__decor _big-border">
+            <svg>
+              <use xlink:href="@img/icons/icons.svg#border"></use>
+            </svg>
+          </div>
+          <div class="panteon__decor _small-yellow">
+            <svg>
+              <use xlink:href="@img/icons/icons.svg#yellow"></use>
+            </svg>
+          </div>
+          <div class="panteon__decor _small-border">
+            <svg>
+              <use xlink:href="@img/icons/icons.svg#border"></use>
+            </svg>
+          </div>
+        </section>
+        <section data-watch="navigator" class="page__lifestyle lifestyle">
+          <div class="lifestyle__container">
+            <div data-watch data-watch-threshold="0.7" class="lifestyle__image">
+              <img src="@img/life-style-1.jpg" alt="lifestyle" />
+            </div>
+            <div data-watch data-watch-threshold="0.1" class="lifestyle__image">
+              <img src="@img/life-style-2.jpg" alt="lifestyle" />
+            </div>
+            <div
+              data-watch
+              data-watch-threshold="0.7"
+              class="lifestyle__description descriptoin-lifestyle"
+            >
+              <h3 class="descriptoin-lifestyle__title _title">
+                Новый образ жизни
+              </h3>
+              <p class="descriptoin-lifestyle__join-us">
+                Став частью нашей команды, вы сможете изменить привычный ритм
+                жизни и сделать каждый свой день особенным, а формат наших
+                тренировок позволит вам раскрыть потенциал вашего тела на 100%.
+              </p>
+              <div class="descriptoin-lifestyle__button _button">
+                <a href="#">Получить консультацию</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__benefits benefits">
+          <div class="benefits__container">
+            <div class="benefits__item item-benefits">
+              <a href="#" class="item-benefits__link">
+                <div data-watch class="item-benefits__wrap">
+                  <svg>
+                    <use xlink:href="@img/icons/icons.svg#bike"></use>
+                  </svg>
+                </div>
+                <p class="item-benefits__desc">
+                  Полностью укомплектованный зал
+                </p>
+              </a>
+            </div>
+            <div class="benefits__item item-benefits">
+              <a href="#" class="item-benefits__link">
+                <div data-watch class="item-benefits__wrap">
+                  <svg>
+                    <use xlink:href="@img/icons/icons.svg#dumbbell"></use>
+                  </svg>
+                </div>
+                <p class="item-benefits__desc">
+                  Удобное расположение в центре города
+                </p>
+              </a>
+            </div>
+            <div class="benefits__item item-benefits">
+              <a href="#" class="item-benefits__link">
+                <div data-watch class="item-benefits__wrap">
+                  <svg>
+                    <use xlink:href="@img/icons/icons.svg#location"></use>
+                  </svg>
+                </div>
+                <p class="item-benefits__desc">
+                  Удобное расположение в центре города
+                </p>
+              </a>
+            </div>
+            <div class="benefits__item item-benefits">
+              <a href="#" class="item-benefits__link">
+                <div data-watch class="item-benefits__wrap">
+                  <svg>
+                    <use xlink:href="@img/icons/icons.svg#wallet"></use>
+                  </svg>
+                </div>
+                <p class="item-benefits__desc">Доступная стоимость занятий</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <section data-watch="navigator" class="page__gallery gallery">
+          <div class="gallery__container">
+            <h3 class="gallery__title _title">Галерея</h3>
+            <div class="gallery__person person">
+              <div class="person__slider swiper">
+                <div class="person__wrapper swiper-wrapper">
+                  <div class="person__slide swiper-slide">
+                    <div class="person__slide-wrap">
+                      <img src="@img/person-1.jpg" alt="person-1" />
+                    </div>
+                  </div>
+                  <div class="person__slide swiper-slide">
+                    <div class="person__slide-wrap">
+                      <img src="@img/person-2.jpg" alt="person-2" />
+                    </div>
+                  </div>
+                  <div class="person__slide swiper-slide">
+                    <div class="person__slide-wrap">
+                      <img src="@img/person-3.jpg" alt="person-3" />
+                    </div>
+                  </div>
+                  <div class="person__slide swiper-slide">
+                    <div class="person__slide-wrap">
+                      <img src="@img/person-4.jpg" alt="person-4" />
+                    </div>
+                  </div>
+                  <div class="person__slide swiper-slide">
+                    <div class="person__slide-wrap">
+                      <img src="@img/person-1.jpg" alt="person-1" />
+                    </div>
+                  </div>
+                  <div class="person__slide swiper-slide">
+                    <div class="person__slide-wrap">
+                      <img src="@img/person-2.jpg" alt="person-2" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar _person-scrollbar"></div>
+                <div class="person__controls slider-controls">
+                  <button
+                    type="button"
+                    class="swiper-button-prev _person-prev _icon-arrow-left"
+                  ></button>
+                  <button
+                    type="button"
+                    class="swiper-button-next _person-next _icon-arrow-left"
+                  ></button>
+                </div>
+              </div>
+            </div>
+            <div class="gallery__place place">
+              <div class="place__slider swiper">
+                <div class="place__wrapper swiper-wrapper">
+                  <div class="place__slide swiper-slide">
+                    <div class="place__slide-wrap">
+                      <img src="@img/place-1.jpg" alt="place-1" />
+                    </div>
+                  </div>
+                  <div class="place__slide swiper-slide">
+                    <div class="place__slide-wrap">
+                      <img src="@img/place-2.jpg" alt="place-2" />
+                    </div>
+                  </div>
+                  <div class="place__slide swiper-slide">
+                    <div class="place__slide-wrap">
+                      <img src="@img/place-3.jpg" alt="place-3" />
+                    </div>
+                  </div>
+                  <div class="place__slide swiper-slide">
+                    <div class="place__slide-wrap">
+                      <img src="@img/place-1.jpg" alt="place-1" />
+                    </div>
+                  </div>
+                  <div class="place__slide swiper-slide">
+                    <div class="place__slide-wrap">
+                      <img src="@img/place-2.jpg" alt="place-2" />
+                    </div>
+                  </div>
+                  <div class="place__slide swiper-slide">
+                    <div class="place__slide-wrap">
+                      <img src="@img/place-3.jpg" alt="place-3" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-scrollbar _place-scrollbar"></div>
+                <div class="place__controls slider-controls">
+                  <button
+                    type="button"
+                    class="swiper-button-prev _place-prev _icon-arrow-left"
+                  ></button>
+                  <button
+                    type="button"
+                    class="swiper-button-next _place-next _icon-arrow-left"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-watch class="gallery__wrap-decor">
+            <div class="gallery__decor gallery__decor-black">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#black"></use>
+              </svg>
+            </div>
+            <div class="gallery__decor gallery__decor-border">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#border"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section data-watch="navigator" class="page__subscription subscription">
+          <div class="subscription__container">
+            <h3 class="subscription__title _title">Абонементы</h3>
+            <div
+              data-simplebar
+              data-simplebar-auto-hide="false"
+              class="subscription__table-wrap"
+            >
+              <table
+                data-table
+                class="subscription__training subscription-table"
+              >
+                <thead class="subscription-table__head">
+                  <tr>
+                    <td>Кол-во занятий</td>
+                    <td>1 тренировка</td>
+                    <td>4 тренировки</td>
+                    <td>8 тренировок</td>
+                    <td>12 тренировок</td>
+                  </tr>
+                </thead>
+                <tbody class="subscription-table__body">
+                  <tr>
+                    <td>Персональный тренинг с инструктором</td>
+                    <td>700 руб.</td>
+                    <td>2600 руб. (действителен в течении 3 недель)</td>
+                    <td>5200 руб. (действителен в течении 6 недель)</td>
+                    <td>7200 руб. (действителен в течении 10 недель)</td>
+                  </tr>
+                  <tr>
+                    <td>Самостоятельные тренировки в тренажерном зале</td>
+                    <td>250 руб.</td>
+                    <td>-</td>
+                    <td>1500 руб. (действителен в течении 30 дней)</td>
+                    <td>2000 руб. (действителен в течении 30 дней)</td>
+                  </tr>
+                  <tr>
+                    <td>Зал групповых программ</td>
+                    <td>300 руб.</td>
+                    <td>-</td>
+                    <td>2000 руб. (действителен в течении 30 дней</td>
+                    <td>2750 руб. (действителен в течении 45 дней)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="subscription__sub-title">Абонемент по времени</h4>
+            <div
+              data-simplebar
+              data-simplebar-auto-hide="false"
+              class="subscription__table-wrap"
+            >
+              <table
+                data-table
+                class="subscription__timeing subscription-table"
+              >
+                <thead class="subscription-table__head">
+                  <tr>
+                    <td>Тип карты</td>
+                    <td>12 месяцев</td>
+                    <td>6 месяцев</td>
+                    <td>3 месяцев</td>
+                    <td>1 месяцев</td>
+                  </tr>
+                </thead>
+                <tbody class="subscription-table__body">
+                  <tr>
+                    <td>
+                      Индивидуальная, полная без ограничения в посещении /
+                      <span> 8:00 – 23:00 </span>
+                    </td>
+                    <td>18000 (+200 мин. солярия)</td>
+                    <td>12000</td>
+                    <td>7000</td>
+                    <td>2500</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Индивидуальная, дневная /<span> 8:00 – 17:00 </span>
+                    </td>
+                    <td>-</td>
+                    <td>9500</td>
+                    <td>5500</td>
+                    <td>2000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="subscription__sub-title">Разовые тренировки</h4>
+            <div data-watch class="subscription__onetime onetime-subscription">
+              <div class="onetime-subscription__item item-onetime">
+                <h5 class="item-onetime__title">
+                  Самостоятельные тренировки в тренажерном зале
+                </h5>
+                <div class="item-onetime__time _icon-time">8:00 – 23:00</div>
+                <p class="item-onetime__price">250₽</p>
+                <p class="item-onetime__training">1 териновка</p>
+                <div class="item-onetime__button _button">
+                  <a href="#">Узнать</a>
+                </div>
+              </div>
+              <div class="onetime-subscription__item item-onetime">
+                <h5 class="item-onetime__title">
+                  Самостоятельные тренировки в тренажерном зале
+                </h5>
+                <div class="item-onetime__time _icon-time">8:00 – 23:00</div>
+                <p class="item-onetime__price">700₽</p>
+                <p class="item-onetime__training">1 териновка</p>
+                <div class="item-onetime__button _button">
+                  <a href="#">Узнать</a>
+                </div>
+              </div>
+              <div class="onetime-subscription__item item-onetime">
+                <h5 class="item-onetime__title">Зал групповых программ</h5>
+                <div class="item-onetime__time _icon-time">
+                  график занятий уточняйте у администратора
+                </div>
+                <p class="item-onetime__price">300₽</p>
+                <p class="item-onetime__training">1 териновка</p>
+                <div class="item-onetime__button _button">
+                  <a href="#">Узнать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subscription__left-decor-wrap">
+            <div class="subscription__decor _black">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#black"></use>
+              </svg>
+            </div>
+            <div class="subscription__decor _border">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#border"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="subscription__right-decor-wrap">
+            <div class="subscription__decor _right-black">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#black"></use>
+              </svg>
+            </div>
+            <div class="subscription__decor _right-yellow">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#yellow"></use>
+              </svg>
+            </div>
+            <div class="subscription__decor _right-border">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#border"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section data-watch="navigator" class="page__coaches coaches">
+          <div class="coaches__container">
+            <div class="coaches__desc">
+              <h2 class="coaches__title _title">Тренеры</h2>
+            </div>
+            <div class="coaches__gallery">
+              <div class="coaches__slider swiper">
+                <div class="coaches__wrapper swiper-wrapper">
+                  <div class="coaches__slide swiper-slide couch-item">
+                    <div class="couch-item__image">
+                      <img src="@img/coach-1.jpg" alt="coach-1" />
+                    </div>
+                    <h5 class="couch-item__name">Илья Панченко</h5>
+                    <ul class="couch-item__benefits">
+                      <li class="couch-item__benefit">Персональный тренер</li>
+                      <li class="couch-item__benefit">
+                        Инструктор тренажерного зала
+                      </li>
+                      <li class="couch-item__benefit">Опыт работы — 4 года</li>
+                    </ul>
+                  </div>
+                  <div class="coaches__slide swiper-slide couch-item">
+                    <div class="couch-item__image">
+                      <img src="@img/coach-2.jpg" alt="coach-2" />
+                    </div>
+                    <h5 class="couch-item__name">Екатерина Сосина-Нуньес</h5>
+                    <ul class="couch-item__benefits">
+                      <li class="couch-item__benefit">Фитнес-тренер</li>
+                      <li class="couch-item__benefit">Опыт работы — 4 года</li>
+                    </ul>
+                  </div>
+                  <div class="coaches__slide swiper-slide couch-item">
+                    <div class="couch-item__image">
+                      <img src="@img/coach-3.jpg" alt="coach-3" />
+                    </div>
+                    <h5 class="couch-item__name">Юлия Белова</h5>
+                    <ul class="couch-item__benefits">
+                      <li class="couch-item__benefit">Фитнес-тренер</li>
+                      <li class="couch-item__benefit">
+                        Инструктор тренажерного зала
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="coaches__slide swiper-slide couch-item">
+                    <div class="couch-item__image">
+                      <img src="@img/coach-1.jpg" alt="coach-1" />
+                    </div>
+                    <h5 class="couch-item__name">Илья Панченко</h5>
+                    <ul class="couch-item__benefits">
+                      <li class="couch-item__benefit">Персональный тренер</li>
+                      <li class="couch-item__benefit">
+                        Инструктор тренажерного зала
+                      </li>
+                      <li class="couch-item__benefit">Опыт работы — 4 года</li>
+                    </ul>
+                  </div>
+                  <div class="coaches__slide swiper-slide couch-item">
+                    <div class="couch-item__image">
+                      <img src="@img/coach-2.jpg" alt="coach-2" />
+                    </div>
+                    <h5 class="couch-item__name">Екатерина Сосина-Нуньес</h5>
+                    <ul class="couch-item__benefits">
+                      <li class="couch-item__benefit">Фитнес-тренер</li>
+                      <li class="couch-item__benefit">Опыт работы — 4 года</li>
+                    </ul>
+                  </div>
+                  <div class="coaches__slide swiper-slide couch-item">
+                    <div class="couch-item__image">
+                      <img src="@img/coach-3.jpg" alt="coach-3" />
+                    </div>
+                    <h5 class="couch-item__name">Юлия Белова</h5>
+                    <ul class="couch-item__benefits">
+                      <li class="couch-item__benefit">Фитнес-тренер</li>
+                      <li class="couch-item__benefit">
+                        Инструктор тренажерного зала
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="coaches__control">
+                  <button
+                    class="coaches__control-btn coaches__prev-slide _icon-arrow-left-small"
+                  ></button>
+                  <button
+                    class="coaches__control-btn coaches__next-slide _icon-arrow-left-small"
+                  ></button>
+                  <div class="coaches__scrollbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-watch class="coaches__wrap-decor">
+            <div class="coaches__decor _yellow">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#yellow"></use>
+              </svg>
+            </div>
+            <div class="coaches__decor _border">
+              <svg>
+                <use xlink:href="@img/icons/icons.svg#border"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <section class="page__callback callback">
+          <div
+            data-watch
+            data-watch-threshold="0.8"
+            class="callback__container"
+          >
+            <div class="callback__inner">
+              <h3 class="callback__title _title">Остались вопросы?</h3>
+              <p class="callback__desc">
+                Оставьте Ваш номер телефона и мы
+                <span>обязательно с Вами свяжемся</span>
+              </p>
+              <form
+                data-dev
+                data-popup-message="#thanks-popup"
+                class="form callback__form"
+                action="#"
+              >
+                <input
+                  autocomplete="off"
+                  data-validate
+                  data-required="name"
+                  type="text"
+                  name="form[]"
+                  data-error="Неверное Имя"
+                  placeholder="Введите имя"
+                  class="input"
+                />
+                <input
+                  autocomplete="off"
+                  data-validate
+                  data-required="phone"
+                  type="text"
+                  name="form[]"
+                  data-error="Неверный телефон!"
+                  placeholder="Введите телефон"
+                  class="input"
+                />
+                <div class="callback__sbm-button">
+                  <button type="submit" class="button">
+                    Получить консультацию
+                  </button>
+                </div>
+              </form>
+              <p class="callback__agreement">
+                Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности
+              </p>
+            </div>
+          </div>
+        </section>
+        <section data-watch="navigator" class="page__contacts contacts">
+          <div class="contacts__map-wrap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.2825433082457!2d38.98175961607727!3d55.80569509537859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414b1c7d62100001%3A0x91158e97225c4c9d!2z0YPQuy4g0JvQtdC90LjQvdCwLCA4NCwg0J7RgNC10YXQvtCy0L4t0JfRg9C10LLQviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNDI2MDA!5e0!3m2!1sru!2sge!4v1677002673715!5m2!1sru!2sge"
+              width="800"
+              height="567"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contacts__wrap">
+            <div class="contacts__block block-contacts">
+              <h3 class="block-contacts__title _title">Контакты</h3>
+              <a href="#" class="block-contacts__link _icon-location-footer"
+                >г. Орехово-Зуево, ул. Ленина 84</a
+              >
+              <p class="block-contacts__work-time _icon-time-footer">
+                Ежедневно с 8:00 до 23:00
+              </p>
+              <a href="tel:+74964161916" class="block-contacts__link _tel1"
+                >+7 (496) 416-19-16,
+              </a>
+              <a href="tel:+79258812170" class="block-contacts__link _tel2"
+                >+7 (925) 881-21-70</a
+              >
+              <p class="block-contacts__subscribe">
+                Подписывайтесь на наши соц.сети
+              </p>
+              <a
+                href="#"
+                class="block-contacts__social-link _icon-instagram"
+              ></a>
+              <a href="#" class="block-contacts__social-link _icon-vk"></a>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{}) @@include('html/_popup.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>
