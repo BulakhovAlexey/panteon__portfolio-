@@ -7,7 +7,6 @@
 	transition: all 0.4s ease 0s;
 	z-index: 50;
 	opacity: 0;
-	transition: all 0.3s ease .4s;
 	&.showBg{
 		background-color: rgba($color: $blackColor, $alpha: .6)
 	}
@@ -17,6 +16,8 @@
 	justify-content: space-between;
 	align-items: center;
 	&__logo {
+		position: relative;
+		z-index: 99;
 		flex: 0 1 rem(230);
 		img{
 			width: 100%;
@@ -31,6 +32,21 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		transition: all 0.3s ease 0s;
+		@media (max-width:$mobile){
+			display: flex;
+			flex-direction: column;
+			justify-content:center;
+			align-items: center;
+			position: absolute;
+			width: 100%;
+			top: 0;
+			padding-top: rem(50);
+			padding-bottom: rem(10);
+			left: 0;
+			transform: translateY(-300%);		
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.8075) 100%);
+		}
 	}
 	&__list {
 		flex: 1 1 100%;
@@ -40,9 +56,8 @@
 		flex-wrap: wrap;
 		transition: all 0.4s ease 0s;
 		@media (max-width:$mobile){
-			display: flex;	
-			transform: translateY(-300%); 
-			padding-bottom: rem(10); 
+			 display: flex;
+			 
 		}
 	}
 	&__item {
@@ -87,6 +102,7 @@
 		}
 		@media (max-width:$mobile){
 			 padding: rem(5); 
+			 margin: 0 auto;
 		}
 	}
 	&__phone {
@@ -156,10 +172,11 @@
 }
 //========================================================================================================================================================
 html.menu-open .header {
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.8075) 100%);
+		background: none;
 }
-html.menu-open .menu__list {
+html.menu-open .menu__body {
 	transform: translateY(0);
+	
 }
 //========================================================================================================================================================
 

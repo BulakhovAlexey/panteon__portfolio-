@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/_head.htm',{ "title":"TITLE" })
+  @@include('html/_head.htm',{ "title":"Panteon" })
   <body>
     <div class="wrapper">
       @@include('html/_header.htm',{})
       <main class="page">
-        <section class="page__panteon panteon">
+        <section data-fullscreen class="page__panteon panteon">
           <div class="panteon__container">
             <div class="panteon__content">
               <h1 class="panteon__main-title">Фитнес клуб Пантеон</h1>
@@ -20,7 +20,8 @@
               <a
                 href="#"
                 data-goto-header
-                data-goto=".lifestyle"
+                data-goto=".descriptoin-lifestyle__wrap"
+                data-tippy-content="Скролл!"
                 class="panteon__arrow _icon-arrow-down"
               ></a>
             </div>
@@ -56,24 +57,27 @@
             <div data-watch data-watch-threshold="0.7" class="lifestyle__image">
               <img src="@img/life-style-1.jpg" alt="lifestyle" />
             </div>
-            <div data-watch data-watch-threshold="0.1" class="lifestyle__image">
+            <div data-watch data-watch-threshold="0.5" class="lifestyle__image">
               <img src="@img/life-style-2.jpg" alt="lifestyle" />
             </div>
             <div
-              data-watch
+              data-watch="navigator"
               data-watch-threshold="0.7"
               class="lifestyle__description descriptoin-lifestyle"
             >
-              <h3 class="descriptoin-lifestyle__title _title">
-                Новый образ жизни
-              </h3>
-              <p class="descriptoin-lifestyle__join-us">
-                Став частью нашей команды, вы сможете изменить привычный ритм
-                жизни и сделать каждый свой день особенным, а формат наших
-                тренировок позволит вам раскрыть потенциал вашего тела на 100%.
-              </p>
-              <div class="descriptoin-lifestyle__button _button">
-                <a href="#">Получить консультацию</a>
+              <div class="descriptoin-lifestyle__wrap">
+                <h3 class="descriptoin-lifestyle__title _title">
+                  Новый образ жизни
+                </h3>
+                <p class="descriptoin-lifestyle__join-us">
+                  Став частью нашей команды, вы сможете изменить привычный ритм
+                  жизни и сделать каждый свой день особенным, а формат наших
+                  тренировок позволит вам раскрыть потенциал вашего тела на
+                  100%.
+                </p>
+                <div class="descriptoin-lifestyle__button _button">
+                  <a href="#">Получить консультацию</a>
+                </div>
               </div>
             </div>
           </div>
@@ -328,43 +332,71 @@
               </table>
             </div>
             <h4 class="subscription__sub-title">Разовые тренировки</h4>
-            <div data-watch class="subscription__onetime onetime-subscription">
-              <div class="onetime-subscription__item item-onetime">
-                <h5 class="item-onetime__title">
-                  Самостоятельные тренировки в тренажерном зале
-                </h5>
-                <div class="item-onetime__time _icon-time">8:00 – 23:00</div>
-                <p class="item-onetime__price">250₽</p>
-                <p class="item-onetime__training">1 териновка</p>
-                <div class="item-onetime__button _button">
-                  <a href="#">Узнать</a>
+            <div class="subscription__onetime onetime-subscription">
+              <div
+                data-watch
+                data-watch-threshold="0.5"
+                class="onetime-subscription__wrap"
+              >
+                <div class="onetime-subscription__item">
+                  <h5 class="onetime-subscription__title">
+                    Самостоятельные тренировки в тренажерном зале
+                  </h5>
+                  <div class="onetime-subscription__time _icon-time">
+                    8:00 – 23:00
+                  </div>
+                  <p class="onetime-subscription__price">250₽</p>
+                  <p class="onetime-subscription__training">1 териновка</p>
+                  <div class="onetime-subscription__button _button">
+                    <a href="#">Узнать</a>
+                  </div>
                 </div>
               </div>
-              <div class="onetime-subscription__item item-onetime">
-                <h5 class="item-onetime__title">
-                  Самостоятельные тренировки в тренажерном зале
-                </h5>
-                <div class="item-onetime__time _icon-time">8:00 – 23:00</div>
-                <p class="item-onetime__price">700₽</p>
-                <p class="item-onetime__training">1 териновка</p>
-                <div class="item-onetime__button _button">
-                  <a href="#">Узнать</a>
+              <div
+                data-watch
+                data-watch-threshold="0.5"
+                class="onetime-subscription__wrap"
+              >
+                <div class="onetime-subscription__item">
+                  <h5 class="onetime-subscription__title">
+                    Самостоятельные тренировки в тренажерном зале
+                  </h5>
+                  <div class="onetime-subscription__time _icon-time">
+                    8:00 – 23:00
+                  </div>
+                  <p class="onetime-subscription__price">700₽</p>
+                  <p class="onetime-subscription__training">1 териновка</p>
+                  <div class="onetime-subscription__button _button">
+                    <a href="#">Узнать</a>
+                  </div>
                 </div>
               </div>
-              <div class="onetime-subscription__item item-onetime">
-                <h5 class="item-onetime__title">Зал групповых программ</h5>
-                <div class="item-onetime__time _icon-time">
-                  график занятий уточняйте у администратора
-                </div>
-                <p class="item-onetime__price">300₽</p>
-                <p class="item-onetime__training">1 териновка</p>
-                <div class="item-onetime__button _button">
-                  <a href="#">Узнать</a>
+              <div
+                data-watch
+                data-watch-threshold="0.5"
+                class="onetime-subscription__wrap"
+              >
+                <div class="onetime-subscription__item">
+                  <h5 class="onetime-subscription__title">
+                    Зал групповых программ
+                  </h5>
+                  <div class="onetime-subscription__time _icon-time">
+                    график занятий уточняйте у администратора
+                  </div>
+                  <p class="onetime-subscription__price">300₽</p>
+                  <p class="onetime-subscription__training">1 териновка</p>
+                  <div class="onetime-subscription__button _button">
+                    <a href="#">Узнать</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="subscription__left-decor-wrap">
+          <div
+            data-watch
+            data-watch-margin="80%"
+            class="subscription__left-decor-wrap"
+          >
             <div class="subscription__decor _black">
               <svg>
                 <use xlink:href="@img/icons/icons.svg#black"></use>
@@ -376,7 +408,11 @@
               </svg>
             </div>
           </div>
-          <div class="subscription__right-decor-wrap">
+          <div
+            data-watch
+            data-watch-margin="80%"
+            class="subscription__right-decor-wrap"
+          >
             <div class="subscription__decor _right-black">
               <svg>
                 <use xlink:href="@img/icons/icons.svg#black"></use>
