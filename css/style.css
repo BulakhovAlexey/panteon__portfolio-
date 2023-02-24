@@ -2053,10 +2053,6 @@ svg {
 }
 
 @-webkit-keyframes rotateScale {
-  0% {
-    opacity: 1;
-  }
-
   100% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
             transform: scale(1) rotate3d(-1, 1, 0, 360deg);
@@ -2065,10 +2061,6 @@ svg {
 }
 
 @keyframes rotateScale {
-  0% {
-    opacity: 1;
-  }
-
   100% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, 360deg);
             transform: scale(1) rotate3d(-1, 1, 0, 360deg);
