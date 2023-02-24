@@ -207,10 +207,6 @@ html.loaded .panteon__decor._small-border {
           animation: showEl 0.3s forwards linear 1.4s;
 }
 
-body {
-  background-color: black;
-}
-
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -220,6 +216,7 @@ body {
 }
 
 .wrapper {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
