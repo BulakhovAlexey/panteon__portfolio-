@@ -1411,6 +1411,20 @@ svg {
   gap: 1.875rem;
 }
 
+.subscription__left-decor-wrap._watcher-view .subscription__decor._black,
+.subscription__left-decor-wrap._watcher-view .subscription__decor._border {
+  -webkit-animation: showEl 0.3s linear forwards 0.2s;
+          animation: showEl 0.3s linear forwards 0.2s;
+}
+
+.subscription__right-decor-wrap._watcher-view .subscription__decor._right-black,
+.subscription__right-decor-wrap._watcher-view .subscription__decor._right-border,
+.subscription__right-decor-wrap._watcher-view .subscription__decor._right-yellow {
+  -webkit-transform: scale(-1, 1) translateX(0);
+      -ms-transform: scale(-1, 1) translateX(0);
+          transform: scale(-1, 1) translateX(0);
+}
+
 .subscription__decor {
   position: absolute;
 }
@@ -1420,6 +1434,9 @@ svg {
   bottom: 33%;
   fill: rgb(12, 20, 23);
   fill-opacity: 0.8;
+  -webkit-transform: translate(-200%, 0px);
+      -ms-transform: translate(-200%, 0px);
+          transform: translate(-200%, 0px);
 }
 
 .subscription__decor._border {
@@ -1427,6 +1444,9 @@ svg {
   stroke: rgb(247, 147, 30);
   stroke-width: 1px;
   fill: none;
+  -webkit-transform: translate(-200%, 0px);
+      -ms-transform: translate(-200%, 0px);
+          transform: translate(-200%, 0px);
 }
 
 .subscription__decor._right-black {
@@ -1436,6 +1456,12 @@ svg {
   bottom: 58%;
   fill: rgb(12, 20, 23);
   fill-opacity: 0.8;
+  -webkit-transform: translate(200%, 0px);
+      -ms-transform: translate(200%, 0px);
+          transform: translate(200%, 0px);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .subscription__decor._right-border {
@@ -1446,6 +1472,12 @@ svg {
   stroke: rgb(247, 147, 30);
   stroke-width: 1px;
   fill: none;
+  -webkit-transform: translate(200%, 0px);
+      -ms-transform: translate(200%, 0px);
+          transform: translate(200%, 0px);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .subscription__decor._right-yellow {
@@ -1454,6 +1486,12 @@ svg {
           transform: scale(-1, 1);
   bottom: 60%;
   fill: rgb(247, 147, 30);
+  -webkit-transform: translate(200%, 0px);
+      -ms-transform: translate(200%, 0px);
+          transform: translate(200%, 0px);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .subscription-table {
