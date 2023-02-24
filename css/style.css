@@ -844,6 +844,9 @@ html.menu-open .menu__body {
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
   z-index: 1;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .panteon::after {
