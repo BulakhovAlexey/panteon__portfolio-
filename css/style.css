@@ -207,6 +207,10 @@ html.loaded .panteon__decor._small-border {
           animation: showEl 0.3s forwards linear 1.4s;
 }
 
+body {
+  background-color: black;
+}
+
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
