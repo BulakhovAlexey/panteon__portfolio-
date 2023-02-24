@@ -3614,6 +3614,12 @@
                 if (window.pageYOffset > myHeaderClass.clientHeight) myHeaderClass.classList.add("showBg"); else myHeaderClass.classList.remove("showBg");
             }));
         }
+        function initTrueInnerHeight() {
+            window.addEventListener("resize", (() => {
+                let vh = .01 * window.innerHeight;
+                document.documentElement.style.setProperty("--vh", `${vh}px`);
+            }));
+        }
         class Popup {
             constructor(options) {
                 let config = {
@@ -8965,6 +8971,7 @@
         menuInit();
         addBgToHeader();
         fullVHfix();
+        initTrueInnerHeight();
         formFieldsInit({
             viewPass: false,
             autoHeight: false
