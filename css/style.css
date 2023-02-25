@@ -207,6 +207,10 @@ html.loaded .panteon__decor._small-border {
           animation: showEl 0.3s forwards linear 1.4s;
 }
 
+body {
+  background-color: black;
+}
+
 .lock body {
   overflow: hidden;
   -ms-touch-action: none;
@@ -844,9 +848,9 @@ html.menu-open .menu__body {
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
   z-index: 1;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
 }
 
 .panteon::after {
@@ -933,7 +937,7 @@ html.menu-open .menu__body {
           transform: skew(-25deg);
   padding: 0.75rem 1.4375rem 1.75rem 2.6875rem;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -954,7 +958,7 @@ html.menu-open .menu__body {
 .panteon__button a {
   display: inline-block;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   font-weight: 700;
   font-size: 1rem;
   line-height: 1.25;
@@ -1305,6 +1309,21 @@ svg {
   max-width: 72.5rem;
 }
 
+.person__slide.swiper-slide-active .person__slide-wrap {
+  -webkit-transform: scale(1) translateY(0);
+      -ms-transform: scale(1) translateY(0);
+          transform: scale(1) translateY(0);
+}
+
+.person__slide-wrap {
+  -webkit-transform: scale(0.8) translateY(0);
+      -ms-transform: scale(0.8) translateY(0);
+          transform: scale(0.8) translateY(0);
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
 .person__slide-wrap img {
   max-width: 100%;
 }
@@ -1320,13 +1339,24 @@ svg {
   margin: 0 auto;
 }
 
+.place__slide.swiper-slide-active .place__slide-wrap {
+  opacity: 1;
+  -webkit-transition: all 0.6s ease 0s;
+  -o-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+.place__slide-wrap {
+  opacity: 0.6;
+}
+
 .place__slide-wrap img {
   max-width: 100%;
 }
 
 .slider-controls {
   position: absolute;
-  top: calc(50% - 34px);
+  top: calc(50% - 20px);
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
