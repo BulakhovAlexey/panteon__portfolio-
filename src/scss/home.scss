@@ -25,7 +25,7 @@
     position: relative;
     background: url('@img/main-bg.jpg') center/cover no-repeat;
     z-index: 1;
-    transition: all 0.3s ease 0s;
+    transition: all 0.6s ease 0s;
     &::after{
         position: absolute;
         content:'';
@@ -79,7 +79,7 @@
         transform: skew(-25deg);
         padding: rem(12) rem(23) rem(28) rem(43);
         position: relative;
-        z-index: 2;
+        z-index: 5;
         transition: all 0.3s ease 0s;
         left: -50%;
         opacity: 0;
@@ -103,7 +103,7 @@
         a{
             display: inline-block;
             position: relative;
-            z-index: 2;
+            z-index: 5;
             font-weight: 700;
             font-size: rem(16);
             line-height: math.div(20 , 16);
@@ -406,6 +406,7 @@ svg{
     position: relative;
     background-color: $blackColor;
     @include adaptiveValue("padding-bottom", 100, 90);
+    
     &__title {
         margin-bottom: rem(80);
         text-align: center;
@@ -416,7 +417,6 @@ svg{
                 animation: showEl .5s forwards linear;
             }
         }
-
     }
     &__decor {
         position: absolute;
@@ -448,7 +448,16 @@ svg{
         margin: 0 auto;
         max-width: rem(1160);
     }
+    &__slide{
+        &.swiper-slide-active{
+            .person__slide-wrap{
+                transform: scale(1) translateY(0);
+            }
+        }
+    }
     &__slide-wrap {  
+        transform: scale(0.8) translateY(0);
+        transition: all 0.6s ease 0s;
         img{
             max-width: 100%;
         }  
@@ -462,7 +471,16 @@ svg{
         max-width: rem(1160);
         margin: 0 auto;
     }
+    &__slide{
+        &.swiper-slide-active{
+            .place__slide-wrap{
+                opacity: 1;
+                transition: all 0.6s ease 0s;
+            }
+        }
+    }
     &__slide-wrap {
+        opacity: 0.6;
         img{
             max-width: 100%;
         }     
@@ -470,7 +488,7 @@ svg{
 }
 .slider-controls{
     position: absolute;
-    top: calc(50% - 34px);
+    top: calc(50% - 20px);
     transform: translateY(-50%);
     left: 0;
     right: 0;
