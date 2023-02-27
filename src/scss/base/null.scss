@@ -26,6 +26,7 @@ body {
 	line-height: 1;
 	font-family: $fontFamily;
 	font-size: $fontSize;
+	font-weight: $fontWeight;
 	//text-rendering: optimizeLegibility;
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
@@ -64,10 +65,10 @@ h6 {
 	font-size: inherit;
 }
 
-// svg {
-// 	height: 1em;
-// 	width: 1em;
-// }
+svg {
+	height: 1em;
+	width: 1em;
+}
 svg path {
 	stroke: inherit;
 	fill: inherit;
